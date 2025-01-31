@@ -10,9 +10,9 @@ use PDOException;
  * Clase de conexión a la base de datos
  * Ejemplo
  * Uso: cambiar entre 'mysql' y 'pgsql'
- * $db = new Database('pgsql'); // Cambia a 'mysql' o 'pgsql' según necesites
+ * $connection = new Connection('pgsql'); // Cambia a 'mysql' o 'pgsql' según necesites
  * Ejemplo de consulta
- * $stmt = $db->getPdo()->query("SELECT NOW()");
+ * $stmt = $connection->getPdo()->query("SELECT NOW()");
  * echo "Hora actual: " . $stmt->fetchColumn();
  */
 class Connection {

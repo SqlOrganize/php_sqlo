@@ -87,7 +87,10 @@ abstract class Db {
         return $this->entities[$entityName];
     }
 
-    abstract public function getConnection(): Connection;
+    public function getPdo(): PDO {
+        
+    }
+
     abstract public function getPersistSql(): PersistSql;
     abstract public function getSelectSql(): SelectSql;
 
